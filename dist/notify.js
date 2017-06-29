@@ -351,9 +351,17 @@
 			var css = {};
 			css[main] = 0;
 			if (align === "middle") {
-				css.top = '45%';
+				css.top = '50%';
+				css['transform'] = 'translateY(-50%)';
+				css['-ms-transform'] = 'translateY(-50%)';
+				css['-webkit-transform'] = 'translateY(-50%)';
+				css['-moz-transform'] = 'translateY(-50%)';
 			} else if (align === "center") {
-				css.left = '45%';
+				css.left = '50%';
+				css['transform'] = 'translateX(-50%)';
+				css['-ms-transform'] = 'translateX(-50%)';
+				css['-webkit-transform'] = 'translateX(-50%)';
+				css['-moz-transform'] = 'translateX(-50%)';
 			} else {
 				css[align] = 0;
 			}
